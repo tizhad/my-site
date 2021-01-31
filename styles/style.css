@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  max-width: 1600px;
+  line-height: 1;
+  margin: 0;
+  padding-left: 300px;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  text-align: center;
+  margin-top: 0 ;
+  padding-top: 0;
+  height: 800px;
+  background-image: url("../images/main6.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-p {
+  color: #330331;
+  width: 500px;
+  text-align:justify;
+  line-height: 1.5;
+  margin: auto;
+  padding: 10px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Clear floats after the columns */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.round-img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+.main-h1 {
+font-family:'Poppins', sans-serif;
+font-size: 40px;
+font-weight: 800;
+color: #7c0669;
+text-align: center;
+margin-bottom: 20px;
+}
+
+button {
+  position: relative;
+  text-align: center;
+  margin-left: 180px;
+  margin-top: 100px;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration:underline;
+  font-size: 18px;
+  color: rgb(114, 26, 114);
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.quotes {
+  font-size: 20px;
+  color: #5c285c;
+  font-weight: 400;
+  font-family: serif;
+  text-align: center;
+  line-height: 1.5;
+  padding-right: 0;
+  font-family:'Poppins', sans-serif;
+}
+
+
+.main {
+  margin-left: 0;
+  font-size: 28px;
+  padding: 0px 0px;
+}
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+
+
+.sidenav {
+  background-color: #DFF5F7;
+  height: 100%;
+  text-align: center;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.side-aside {
+  padding-top: 50px;
+}
+
+.h-leftside {
+ font-size: 38px;
+ font-weight: 900;
+ font-family: "Poppins", Arial, sans-serif;
+}
+
+.left-list{
+  list-style-type: none;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 300px;
+  font-weight: 800;
+  display: block;
+}
+a:hover {
+  color: rgb(198, 63, 224);
+  text-decoration: underline;
+}
+a:link {
+  color: rgb(132, 127, 133);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  /* color: pink; */
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+.left-cr {
+  color: #ada8a8;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  /* padding-bottom: 10px; */
+}
+
+
+
+.left-list li {
+   margin:20px;
+  } 
+
+footer {
+    color: #909596;  
+    padding-right: 0;
+    margin-right: 0;
+    background-color:#DFF5F7;
+    /* padding: 0; */
+    text-align: center;
+    bottom: 0;
+    font-family:sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+ 
+footer ul li {
+  margin: 5px;
+  padding: 0;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  display: inline-block;
+}
+.favorite-page-image {
+  width: 232.5px;
+  height: 270px;
+  display: inline-block;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #000000;
+  cursor: pointer;
+  
+  /* opacity: 0; */
+  /* -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease; */
+  transition: all 0.3s ease;
+}
+
+
