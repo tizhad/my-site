@@ -1,111 +1,84 @@
 <!DOCTYPE html>
 <html>
+<title>Tina's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tina's Website</title>
-    <link href="styles/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="sidenav">
-            <aside class="side-aside" style="background-color: #DFF5F7">
-                <h1 class="h-leftside" <a href="index.html">tina<span style="color: rgb(170, 131, 206);">.</span></a>
-                </h1>
-
-                <ul class="left-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="favorites.html">Favorites</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="left-cr">
-                    <p> Copyright ©2021 All rights reserved <br> Made by Tina</p>
-
-                    <ul>
-                        <a href="https://www.linkedin.com/in/tinarezanezhad/">
-                            <i class="fa fa-1x fa-linkedin"> </i>
-                        </a>
-                        <a href="https://github.com/TinaRezanezhad">
-                            <i class="fa fa-1x fa-github"></i>
-                        </a>
-                    </ul>
-
-                </div>
-
-            </aside>
+<body style="max-width: 1600px;" class="content">
+    <!-- Sidebar/menu -->
+    <nav class="sidebar animate-left" id="mySidebar" style=" z-index:3;width:300px;background-color: #DFF5F7;"><br>
+        <div class="container">
+            <h1 class="h-leftside"><b>Tina</b></h1>
         </div>
+        <div>
+            <ul class="left-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <div class="main">
-            <div class="header">
-                <img class=" round-img" src="images/tina-pic.jpeg" alt="My test image">
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay animate-opacity" onclick="close_menu()" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="main" style="margin-left:300px">
+        <header class=" header container" id="portfolio">
+            <span class="button hide-large xxlarge burger hover-text-grey" onclick="show_menu()"><i
+                    class="fa fa-bars"></i></span>
+            <div>
+                <img class="round-img" src="images/0.jpeg" alt="My round image">
                 <div class="main-p">
                     <h1 class="main-h1">Tina Rezanezhad</h1>
-                    <p> I am a Praduct Manager, I live in Amsterdam.</p>
-                    <a href="#me">More About Me</a>
+                    <p> I am a Product Manager, and I live in Amsterdam. <br>
+                        I love to learn programming and this enthusiasm pushed me to being in this academy.
+                    </p>
+                </div>
+                <div style="color: rgb(173, 6, 159); margin-top: 50px; font-size: 30px;"><a href="#me">More About Me</a>
                 </div>
             </div>
 
-            <div class="section" id="about" style="height: 600px;">
-                <div class="hobbies-list">
-                    <div class="quotes">
-                        <p>The Answer to the ultimate question of Life, The Universe and Everything is…42!</p>
-                        <p>The Hitchhiker’s Guide to the Galaxy, Douglas Adams</p>
-                        <p class="h-hobbies"> These are my hobbies</p>
-                        <img src="images/History.jpeg" alt="History">
+        </header>
 
-                    </div>
-                </div>
-            </div>
-
-            <div class="section" id="me" style="height: 600px; background-color: cadetblue;">
-                <div class="hobbies-list">
-                    <div class="quotes">
-                        <p>The Answer to the ultimate question of Life, The Universe and Everything is…42!</p>
-                        <p>The Hitchhiker’s Guide to the Galaxy, Douglas Adams</p>
-                        <p class="h-hobbies"> These are my hobbies</p>
-                        <img src="images/History.jpeg" alt="History">
-
-                    </div>
-                </div>
-            </div>
-
-            <footer>
+        <footer>
+            <div>
                 <ul>
                     <li> <a href=" www.google.com"> HOME </a></li>
                     <li> <a href="https://castbox.fm/channel/Bright-Camp-id3723975?country=us"> PODCAST </a></li>
                     <li> ABOUT </li>
                     <li> CONTACTS </li>
                 </ul>
-                <div>
-                    <a href="https://www.linkedin.com/in/tinarezanezhad/">
-                        <i class="fa fa-1x fa-linkedin"> </i>
-                    </a>
-                    <a href="https://github.com/TinaRezanezhad">
-                        <i class="fa fa-1x fa-github"></i>
-                    </a>
-                </div>
-                <p> ©2020 by Tina Rezanezhad</p>
-            </footer>
-
-        </div>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/tinarezanezhad/"><i class="fa fa-1x fa-linkedin"> </i>
+                </a>
+                <a href="https://github.com/TinaRezanezhad"><i class="fa fa-1x fa-github"></i>
+                </a>
+            </div>
+            <p> ©2020 by Tina Rezanezhad</p>
+        </footer>
 
     </div>
 
+    <!-- End page content -->
 
+    <script>
+        function show_menu() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
+        function close_menu() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
 
-
-
-    <script src="scripts/main.js"></script>
 </body>
 
 </html>
