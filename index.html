@@ -4,64 +4,103 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/style.css">
+<!-- <link rel="javascript" href="scripts/main.js"> -->
+<script type="text/javascript" src="main.js"></script>
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/svg+xml" href="images/favicon.png">
 
 <body style="max-width: 1600px;" class="content">
     <!-- Sidebar/menu -->
-    <nav class="sidebar animate-left" id="mySidebar" style=" z-index:3;width:300px;background-color: #DFF5F7;"><br>
-        <div class="container">
-            <h1 class="h-leftside"><b>Tina</b></h1>
-        </div>
+    <nav class="sidebar animate-left" id="mySidebar" style=" z-index:3;width:300px;background-color: #FFFFFF;"><br>
+        <h1 class="nav-h">Tina <span>.</span></h1>
         <div>
             <ul class="left-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <div style="margin-top: 290px;">
+            <p style="color: #345775;"> &copy; <span id="year"></span> by Tina Rezanezhad</p>
+            <div style="text-align: center; margin-top: 10px;">
+                <a href="https://www.linkedin.com/in/tinarezanezhad/"><i class="fa fa-1x fa-linkedin"> </i>
+                </a>
+                <a href="https://github.com/TinaRezanezhad"><i class="fa fa-1x fa-github"></i>
+                </a>
+            </div>
+            <div>
+                <h3></h3>
+                <p id="curday"></p>
+            </div>
+        </div>
     </nav>
+
 
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="overlay animate-opacity" onclick="close_menu()" title="close side menu" id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
-    <div class="main" style="margin-left:300px">
-        <header class=" header container" id="portfolio">
+    <div class="main">
+        <header class="header" id="portfolio">
             <span class="button hide-large xxlarge burger hover-text-grey" onclick="show_menu()"><i
                     class="fa fa-bars"></i></span>
             <div>
-                <img class="round-img" src="images/0.jpeg" alt="My round image">
-                <div class="main-p">
+                <img class="round-img" src="images/mypic.jpeg" alt="My round image">
+                <div>
                     <h1 class="main-h1">Tina Rezanezhad</h1>
-                    <p> I am a Product Manager, and I live in Amsterdam. <br>
-                        I love to learn programming and this enthusiasm pushed me to being in this academy.
+                    <p class="main-p"> I've been a Product Manager for about six years. <br>
+                        Working on various products gave me the opportunity to enter the world of software
+                        development and I attracted to coding. <br>
                     </p>
-                </div>
-                <div style="color: rgb(173, 6, 159); margin-top: 50px; font-size: 30px;"><a href="#me">More About Me</a>
                 </div>
             </div>
 
         </header>
 
-        <footer>
-            <div>
-                <ul>
-                    <li> <a href=" www.google.com"> HOME </a></li>
-                    <li> <a href="https://castbox.fm/channel/Bright-Camp-id3723975?country=us"> PODCAST </a></li>
-                    <li> ABOUT </li>
-                    <li> CONTACTS </li>
-                </ul>
+        <!-- About me -->
+        <div class="aboutme" id="about">
+
+            <p class="aboutme-p"> I’m an product manager, some times a writer and looking for to being a Podcaster.
+                Born-and-raised in
+                Iran, a beautiful country with great
+                history and culture. <br>
+                I came to the Netherlands in 2020 and now I'm living in Amsterdam. <br>
+                You can click on blow link, if you are curious abot it.
+            </p>
+            <button class="aboutme-button">
+                <a href="Iran.html"> One Piece Of Iran</a>
+            </button>
+
+        </div>
+
+        <div style="padding: 30px;">
+            <p class="h-hobbies" style="margin-bottom: 50px;"><i style="font-size: 20px;"
+                    class="material-icons">favorite</i>
+                I LOVE <i style="font-size: 20px;" class="material-icons">favorite</i></p>
+        </div>
+
+        <div style="background-color: #345775;" class="row">
+            <div class="column">
+                <img src="images/food.jpeg" alt="Food" style="width:100%">
+                <p style="text-align: center; color: #FFFFFF;">Food</p>
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/tinarezanezhad/"><i class="fa fa-1x fa-linkedin"> </i>
-                </a>
-                <a href="https://github.com/TinaRezanezhad"><i class="fa fa-1x fa-github"></i>
-                </a>
+
+            <div class="column">
+                <img src="images/movie.jpg" alt="Movie" style="width:100%">
+                <p style="text-align: center; color: #FFFFFF;">Movie & Series</p>
             </div>
-            <p> ©2020 by Tina Rezanezhad</p>
-        </footer>
+            <div class="column">
+                <img src="images/newbook.jpg" alt="Book" style="width:100%">
+                <p style="text-align: center; color: #FFFFFF;">Book</p>
+
+            </div>
+        </div>
 
     </div>
 
@@ -77,6 +116,8 @@
             document.getElementById("mySidebar").style.display = "none";
             document.getElementById("myOverlay").style.display = "none";
         }
+
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 
 </body>
